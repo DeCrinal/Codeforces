@@ -1,3 +1,3 @@
 # Codeforces
-Here I collect my solved Codeforces problems
+Here I collect solved Codeforces problems
 (even old ones)
