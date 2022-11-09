@@ -1,0 +1,27 @@
+#include <iostream>
+#include<stack>
+#include<vector>
+using namespace std;
+int main()
+{
+    int t, n;
+    vector<int>res;
+    string s;
+    cin>>t;
+    for(int i = 0; i<t;i++){
+        stack<int>p;
+        cin>>n;
+        cin>>s;
+        for(int j = 0; j<n;j++){
+            if(s[j]=='(')
+                p.push(s[j]);
+            else
+                if (!p.empty())p.pop();
+        }
+        res.push_back(p.size());
+    }
+    for(int i = 0; i<t; i++)
+        cout<<res[i]<<endl;
+    return 0;
+}
+
